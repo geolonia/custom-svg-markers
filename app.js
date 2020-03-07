@@ -1,19 +1,11 @@
-import svgFile from './marker.svg'
+import fs from "fs"
 
 const map = new geolonia.Map(document.getElementById("map"));
 const geojson =
   "https://raw.githubusercontent.com/wakayama-pref-org/road-regulation-information/master/JSON/Road-regulation-information.geojson";
+const svg = fs.readFileSync(__dirname + "/marker.svg", "utf8");
 
 (async () => {
-  const res = await fetch(svgFile);
-
-  if (!res.ok) {
-    console.log("Error: SVG file not found.");
-    return;
-  }
-
-  const svg = await res.text();
-
   const resJson = await fetch(geojson);
 
   if (!resJson.ok) {
