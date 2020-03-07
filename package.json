@@ -1,0 +1,32 @@
+{
+  "name": "custom-svg-marker-with-geolonia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel -d ${TMPDIR} index.html --open",
+    "build": "rm -fr docs && parcel build -d docs index.html --public-url '.' && touch docs/.nojekyll"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codesandbox-app/static-template.git"
+  },
+  "keywords": [],
+  "author": "Ives van Hoorne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codesandbox-app/static-template/issues"
+  },
+  "homepage": "https://github.com/codesandbox-app/static-template#readme",
+  "devDependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel": "^1.12.4",
+    "sass": "^1.26.2",
+    "serve": "^11.2.0"
+  }
+}
