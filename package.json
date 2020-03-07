@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "parcel -d ${TMPDIR} index.html --open",
-    "build": "rm -fr docs && parcel build -d docs index.html --public-url '.' && touch docs/.nojekyll"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
   },
   "browserslist": [
     "last 1 Chrome versions"
