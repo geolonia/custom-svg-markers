@@ -1,5 +1,4 @@
-import svgFile from "./marker.svg"
-
+const svgFile = require('./marker.svg')
 const map = new geolonia.Map(document.getElementById("map"));
 const geojson =
   "https://raw.githubusercontent.com/wakayama-pref-org/road-regulation-information/master/JSON/Road-regulation-information.geojson";
