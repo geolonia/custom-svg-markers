@@ -1,7 +1,11 @@
-const svgFile = require('./marker.svg')
+import svgFile from 'raw-loader!./marker.svg'
+
 const map = new geolonia.Map(document.getElementById("map"));
 const geojson =
   "https://raw.githubusercontent.com/wakayama-pref-org/road-regulation-information/master/JSON/Road-regulation-information.geojson";
+
+
+fs.readFileSync
 
 (async () => {
   const res = await fetch(svgFile);
