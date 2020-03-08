@@ -29,7 +29,7 @@ const svg = fs.readFileSync(__dirname + "/marker.svg", "utf8");
       circle.style.fill = "#999999";
     }
 
-    new geolonia.Marker(marker, { offset: [0, 0] })
+    new geolonia.Marker({element: marker, offset: [0, 0] })
       .setLngLat(feature.geometry.coordinates)
       .setPopup(popup)
       .addTo(map);
